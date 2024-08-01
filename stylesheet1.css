@@ -1,0 +1,166 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+
+.time,.stopwatch,.timer{
+    display: flex;
+    background-color: rgb(182, 245, 240);
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+ 
+}
+.text_clock{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family:Roboto;
+    font-size: bold;
+}
+.clockBox{
+    width: 500px;   
+    height: 100%; 
+    background-color:rgb(215, 240, 238);
+    border-color: rgb(255, 255, 255);
+    border-style:solid;
+    border-bottom: 0;
+    border-top: 0;
+    align-self: center;
+    
+    align-content: center;
+}
+.stopwatch{
+    background-color: rgb(153, 219, 128);
+
+}
+.timer{
+    background-color: rgb(221, 236, 181);
+}
+
+.text_Stopwatch,.text_Timer{
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    width:500px;
+    border-radius: 50px;
+    border-width: 0px;
+    text-align: center;
+    height:50px;
+    font-size: 40px;
+    font-family: Bitter;
+    color:rgb(0, 0, 0);
+
+}
+.text_Stopwatch:hover,
+.text_Timer:hover{
+    cursor:pointer;
+    background-color: rgb(235, 193, 193);}
+.fairytale{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.clickme{
+    background-color: white;
+    border-style: none;
+}
+.clickme:hover{
+    cursor:pointer;
+}
+.content{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+.buttons{
+    width:160px;
+    display:flex;
+    flex-direction: column;
+    border: 2px;
+    border-style:solid;
+    align-items: center;
+    justify-items: center;
+    border-bottom: none;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: rgb(164, 161, 161);
+}
+.timeBox{
+    margin-left: 50px;
+    background-color: rgb(177, 221, 196);
+    width: 300px;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+}
+.startstop,.restart{
+    
+    
+    margin-top: 10px;
+   
+    background-color: rgb(148, 221, 213);
+    height: 120px;
+    width:120px;
+    display: inline;
+    border-style:double;
+    border-radius: 20px;
+    border-color:  rgb(47, 168, 162);
+    font-family: Roboto;
+    text-align: center;
+    font-weight:bold;
+}
+.startstop{
+
+ 
+    font-size: 40px;
+}
+.restart{
+    font-size:20px;
+}
+.startstop:hover,.restart:hover{
+    cursor:pointer;
+    background-color: rgb(206, 239, 235);
+
+}
+
+.stopwatchTime{
+    font-size: 50px;
+    font-family: Merriweather;
+}
+.picBox{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(210, 165, 239);
+    justify-content: space-between;
+
+}
+.heading{
+    margin-top:10px;
+    flex:3;
+    align-self: center;
+    margin-left: 500px;;
+}
+.image{
+    margin-top:10px;
+    background-color: blanchedalmond;
+    flex:1;
+}
+
+.pic{
+    height:150px;
+  
+}
+.text_heading{
+    font-size: 60px;
+    font-family:Anton;
+    
+}

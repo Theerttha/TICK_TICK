@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <link href="stylesheet2.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Timer
+        </title>
+    </head>
+    <body>
+
+        <div class="headingbox">
+            <div class="headingText">
+                TIMER
+            </div>
+            <div class="sandclock">
+                <img class="sand" src="sand2.jpg">
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="hour">
+                <div class="box">
+                    <button class="bbox" onclick="show6();">
+                        <h class="num" id="b6">0</h>
+                    </button>
+                    <div class="nos" id="drop6">
+                        <button class="digbox" onclick="document.getElementById('b6').innerHTML='0';h2=0">
+                            <h class="dig">0</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b6').innerHTML='1';h2=10">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b6').innerHTML='2';h2=20">
+                            <h class="dig">2</h>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="bbox" onclick="show5();">
+                        <h class="num" id="b5">0</h>
+                    </button>
+                    <div class="nos" id="drop5">
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='0';h1=0">
+                            <h class="dig">0</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='1';h1=1">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='2';h1=2">
+                            <h class="dig">2</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='3';h1=3">
+                            <h class="dig">3</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='4';h1=4">
+                            <h class="dig">4</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='5';h1=5">
+                            <h class="dig">5</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='6';h1=6">
+                            <h class="dig">6</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='7';h1=7">
+                            <h class="dig">7</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='8';h1=8">
+                            <h class="dig">8</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b5').innerHTML='9';h1=9">
+                            <h class="dig">9</h>
+                        </button>
+    
+                    </div>
+
+                </div>
+            </div>
+            <div class="colonbox">
+                <h class="colon">:</h>
+            </div>
+
+            <div class="minute">
+                
+                <div class="box">
+                    <button class="bbox" onclick="show4();">
+                        <h class="num" id="b4">0</h>
+                    </button>
+                    <div class="nos" id="drop4">
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='0';m2=0">
+                            <h class="dig">0</h>
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='1';m2=10">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='2';m2=20">
+                            <h class="dig">2</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='3';m2=30">
+                            <h class="dig">3</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='4';m2=40">
+                            <h class="dig">4</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b4').innerHTML='5';m2=50">
+                            <h class="dig">5</h>
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="bbox" onclick="show3();">
+                        <h class="num" id="b3">0</h>
+                    </button>
+                    <div class="nos" id="drop3">
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='0';m1=0">
+                            <h class="dig">0</h>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='1';m1=1">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='2';m1=2">
+                            <h class="dig">2</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='3';m1=3">
+                            <h class="dig">3</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='4';m1=4">
+                            <h class="dig">4</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='5';m1=5">
+                            <h class="dig">5</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='6';m1=6">
+                            <h class="dig">6</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='7';m1=7">
+                            <h class="dig">7</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='8';m1=8">
+                            <h class="dig">8</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b3').innerHTML='9';m1=9">
+                            <h class="dig">9</h>
+                        </button>
+    
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="colonbox">
+                <h class="colon">:</h>
+
+            </div>
+            <div class="second">
+
+                <div class="box">
+                    <button class="bbox" onclick="show2();">
+                        <h class="num" id="b2">0</h>
+                    </button>
+                    <div class="nos" id="drop2">
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='0';s2=0">
+                            <h class="dig">0</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='1';s2=10">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='2';s2=20">
+                            <h class="dig">2</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='3';s2=30">
+                            <h class="dig">3</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='4';s2=40">
+                            <h class="dig">4</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b2').innerHTML='5';s2=50">
+                            <h class="dig">5</h>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <button class="bbox" onclick="show1();">
+                        <h class="num" id="b1">0</h>
+                    </button>
+                    <div class="nos" id="drop1">
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='0';s1=0">
+                            <h class="dig">0</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='1';s1=1">
+                            <h class="dig">1</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='2';s1=2">
+                            <h class="dig">2</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='3';s1=3">
+                            <h class="dig">3</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='4';s1=4">
+                            <h class="dig">4</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='5';s1=5">
+                            <h class="dig">5</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='6';s1=6">
+                            <h class="dig">6</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='7';s1=7">
+                            <h class="dig">7</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='8';s1=8">
+                            <h class="dig">8</h>
+                        </button>
+                        <button class="digbox" onclick="document.getElementById('b1').innerHTML='9';s1=9">
+                            <h class="dig">9</h>
+                        </button>
+    
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="operations">
+            <button class="startstop" id="starttext" onclick="clockAction+=1;console.log(clockAction);
+            if(clockAction%2!=0){
+                document.getElementById('starttext').innerHTML=`<i class='fa fa-pause'></i>`
+                if(time==0){
+                    time=(h1+h2)*3600+(m1+m2)*60+s1+s2;
+                    
+                }
+                timer();
+            }
+            else{
+                document.getElementById('starttext').innerHTML='&#9658';
+                
+    
+            }">
+            &#9658
+            </button>
+    
+            <button class="restart" onclick="time=(h1+h2)*3600+(m1+m2)*60+s1+s2;
+            document.getElementById('text').innerHTML='00:00:00'">
+            RESTART
+            </button>
+
+        </div>
+
+        <audio id="audio">
+            <source src="ding.mp3" type="audio/mp3">
+        </audio>
+        <div class="timerbox">
+            <h class="timer" id="text"> 00:00:00</h>
+        </div>
+
+        <script src="script_timer.java"></script>
+        <script>
+            let s1=0;
+            let s2=0;
+            let m1=0;
+            let m2=0
+            let h1=0;
+            let h2=0;
+            let clockAction=0;
+            let time=0;
+   
+        </script>
+    </body>
+</html>

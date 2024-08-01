@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link href="stylesheet1.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Stopwatch
+        </title>
+    </head>
+    <body class="body">
+        <div class="picBox">
+            <div class="heading">
+                <h class="text_heading">STOPWATCH</h>
+            </div>
+            <div class="image">
+                <img src="stopwatch.jpg" class="pic">
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <div class="buttons">
+                <div class="button1">
+                    <button class="startstop" id="text" onclick="clockAction+=1;
+                        if (clockAction%2!=0){
+                            flag=setInterval(stopWatch,1000);
+                            document.getElementById('text').innerHTML=`<i class='fa fa-pause'></i>`;}
+                        else{
+                            clearInterval(flag);
+                            document.getElementById('text').innerHTML='&#9658';}"> &#9658</button>
+                </div>
+                <div class="button2">
+                    <button class="restart" onclick="clearInterval(flag);clockAction=0;stop();stopWatch();
+                    document.getElementById('text').innerHTML='&#9658';">RESTART</button>
+                </div>
+            </div>
+            <div class="timeBox">
+                <h class="stopwatchTime" id="show"> </h>
+            </div>
+        </div>
+        
+        
+        <script src="script_stopwatch.java">  
+        </script>
+        <script>
+            let clockAction=0;
+        
+        </script>
+    </body>
+</html>
