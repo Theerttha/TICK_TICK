@@ -1,61 +1,77 @@
 .main{
     display: flex;
-    flex-direction: column;
-    margin-top:100px;
-    margin-left: 0;
-    margin-right: 0;
-
-}
-
-
-.time,.stopwatch,.timer{
-    display: flex;
-    background-color: rgb(182, 245, 240);
-    text-align: center;
-    height: 100px;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     align-content: center;
+    column-gap: 20px;
  
+
 }
+.body,.body1{
+    background-color: black;
+}
+.content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.stopwatch,.timer{
+    
+    background-color: rgb(182, 245, 240);
+    text-align: center;
+    height: 50px;
+    width:200px;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
 .text_clock{
+
     padding-left: 10px;
     text-align: center;
     font-size: 50px;
-    font-family:Roboto;
-    font-size: bold;
+    font-family:Rubik;
+    font-weight: bold;
+    align-self: center;
+    align-content: center;
+    
 }
 .clockBox{
-    width: 500px;   
-    height: 100%; 
-    background-color:rgb(215, 240, 238);
-    border-color: rgb(255, 255, 255);
+    margin-top: 10px;
+  
+    height: 100px; 
+    background-color:rgb(5, 153, 52);
+   
     border-style:solid;
     border-bottom: 0;
     border-top: 0;
     align-self: center;
-    
+    text-align: center;
     align-content: center;
-}
-.stopwatch{
-    background-color: rgb(153, 219, 128);
-
-}
-.timer{
-    background-color: rgb(221, 236, 181);
+    
+    
+    
 }
 
 .text_Stopwatch,.text_Timer{
     align-self: center;
-    background-color: rgb(255, 255, 255);
-    width:500px;
-    border-radius: 50px;
-    border-width: 0px;
+    background-color: rgb(153, 219, 128);
+    border-radius:0;
     text-align: center;
+    width:200px;
     height:50px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: Bitter;
     color:rgb(0, 0, 0);
+
+}
+.text_Timer{
+    background-color: rgb(221, 236, 181);
 
 }
 .text_Stopwatch:hover,
@@ -68,17 +84,19 @@
     margin-top: 10px;
 }
 .clickme{
-    background-color: white;
+    background-color: black;
     border-style: none;
 }
 .clickme:hover{
     cursor:pointer;
 }
-.content{
-    display: inline-flex;
+.content_stopwatch{
+    display: flex;
     flex-direction: row;
-    margin-top: 100px;
-    margin-left: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-width: 1000px;
 }
 .buttons{
     width:160px;
@@ -93,18 +111,20 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-color: rgb(164, 161, 161);
+    
 }
 .timeBox{
-    margin-left: 50px;
+   
     background-color: rgb(177, 221, 196);
-    width: 300px;
+
+    margin-left: 10px;
     align-self: center;
     border-radius: 10px;
-    text-align: center;
+    
+    width: 300px;
+    
 }
 .startstop,.restart{
-    
-    
     margin-top: 10px;
    
     background-color: rgb(148, 221, 213);
@@ -117,6 +137,7 @@
     font-family: Roboto;
     text-align: center;
     font-weight:bold;
+    
 }
 .startstop{
 
@@ -135,25 +156,23 @@
 .stopwatchTime{
     font-size: 50px;
     font-family: Merriweather;
+  
 }
 .picBox{
     display:flex;
     flex-direction: row;
     background-color: rgb(210, 165, 239);
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    min-width: 900px;
 
 }
 .heading{
-    margin-top:10px;
-    flex:3;
-    align-self: center;
-    margin-left: 500px;;
-}
-.image{
-    margin-top:10px;
-    background-color: blanchedalmond;
     flex:1;
+    text-align: center;
+    
 }
+
 
 .pic{
     height:150px;

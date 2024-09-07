@@ -7,34 +7,53 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     </head>
-    <body>
-        <div class="main">
-            <div class="time">
-                <div class="clockBox">
-                    <h id="textClock" class="text_clock"></h>
-                </div>
-                            
-            </div>
+    <body class="body">
+        <div class="main" id="e">
+
             <div class="stopwatch">
-                <button  class="text_Stopwatch" onclick="location.href='stopwatch.html'">
+                <button  class="text_Stopwatch" id="text_Stopwatch">
                     STOPWATCH
                 </button>
                  
             </div>
             <div class="timer">
-                <button class="text_Timer" onclick="location.href='timer.html'">TIMER</button>
+                <button class="text_Timer" id="text_Timer">TIMER</button>
             </div>
-            <div class="fairytale">
-                <button class="clickme" onclick="location.href='poem.html'">
-                    <image src="cogsworth.jpeg"></image>
-                </button>
+            
                 
             </div>
         </div>
+     
+        <div class="clockBox">
+            <h id="textClock" class="text_clock"></h>
+        </div>
+        </div>
+        <div class="content" id="content">
+        </div>
+        <div class="fairytale">
+            <button class="clickme" onclick="location.href='poem.html'">
+                <image src="cogsworth.jpeg"></image>
+            </button>
         
-
-        <script src="clock.js"></script>
+        </div>
+        <script src="clock.js">
+            
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#text_Stopwatch').click(function() {
+                    $('#content').load('stopwatch.html');
+                });
+            })
+            $(document).ready(function() {
+                $('#text_Timer').click(function() {
+                    $('#content').load('timer.html');
+                });
+            })
+        </script>
         
     
     </body>

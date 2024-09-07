@@ -1,7 +1,8 @@
-.body{
+.body,.body2{
     background-color: black;
 }
-.main{
+
+.main2{
     display: flex;
     flex-direction: row;
     margin-left: 250px;
@@ -14,6 +15,7 @@
 .poembox{
     min-width: 500px
 }
+
 .poem{
     color: rgb(245, 220, 245);
     font-family: dancing script;
@@ -26,6 +28,8 @@
 .textbox{
     min-width:825px;
     text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 .heading{
     font-family: dancing script;
@@ -34,7 +38,8 @@
     
 }
 .nos{
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     overflow-y:scroll;
     max-height: 150px;
@@ -42,29 +47,32 @@
     
 }
 
-.show{
 
-    display: flex;
-    flex-direction: column;
-}
 
 .digbox{
+
     width:80px;
     min-height: 30px;
     border-color: rgba(255, 255, 255, 0.792);
-    
+
 }
 .digbox:hover{
     cursor: pointer;
     background-color: rgb(170, 210, 202);
 
 }
-.buttons{
+.buttons_timer{
     display: flex;
     flex-direction: row;
-    min-width:max-content;
-    justify-content: center;
 
+
+    justify-content: center;
+    min-width: max-content;
+
+}
+.min,.hour,.sec{
+    display: flex;
+    flex-direction: row;
 }
 .box{
     width:100px;
@@ -73,31 +81,39 @@
     margin-right: 0px;
     position: relative;
     display: inline-block;
+    
+    justify-content: center;
+    
+    
 
 }
+
 .bbox{
     width:100px;
     height:100px;
-    background-color: rgb(155, 203, 153);
+    background-color: rgb(110, 158, 216);
     border-style:solid;
     border-radius:10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 0;
-    border-color: rgb(69, 131, 28);
+    border-color: rgb(255, 255, 255);
+    
 
 }
 .bbox:hover{
     cursor:pointer;
-    background-color: rgb(161, 224, 156);
+    background-color: rgb(255, 255, 255);
 }
 .colonbox{
     height:100px;
     width:30px;
     margin-left: 10px;
+    
 }
 .colon{
     font-size:100px;
+    color: rgb(97, 118, 128);
     
 }
 .headingbox{
@@ -107,6 +123,7 @@
     background-color: rgb(141, 185, 188);
     height: 125px;
     align-items: center;
+    min-width: max-content;
 }
 .headingtext{
     flex:1;
@@ -126,7 +143,7 @@
     margin-top: 50px;
     height:75px;
     width:75px;
-    background-color: rgb(223, 182, 128);
+    background-color: rgb(112, 168, 206);
     border-radius: 50px;
     border-style: none;
     font-family:Gupter;
@@ -137,9 +154,9 @@
     width: 100px;
 }
 .startstop:hover,.restart:hover{
-    background-color:antiquewhite;
+    background-color:rgb(255, 255, 255);
     border-style: solid;
-    border-color: rgb(223, 182, 128);
+    border-color: rgb(255, 255, 255);
     cursor:pointer;
     
 }
@@ -151,11 +168,11 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    background-color: rgb(225, 174, 174);
+    background-color: rgb(120, 215, 215);
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border-color: rgb(194, 78, 76);
+    border-color: rgb(76, 117, 194);
     border-style: solid;
     min-width: 750px;
 }
@@ -168,7 +185,7 @@
     gap: 10px;
     min-width: 750px;
 }
-.dig,.num,.timer{
+.dig,.num,.timer2{
     font-family:Gupter;
 
 }
@@ -178,7 +195,7 @@
 .dig{
     font-size: 20px;
 }
-.timer{
+.timer2{
     font-size: 100px;
 }
 .sand{
