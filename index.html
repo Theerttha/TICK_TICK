@@ -12,7 +12,12 @@
     </head>
     <body class="body">
         <div class="main" id="e">
-
+            <div class="back" id="test">
+                <button class="back_button" ="test2">
+                    BACK
+                </button>
+            </div>
+      
             <div class="stopwatch">
                 <button  class="text_Stopwatch" id="text_Stopwatch">
                     STOPWATCH
@@ -46,11 +51,19 @@
             $(document).ready(function() {
                 $('#text_Stopwatch').click(function() {
                     $('#content').load('stopwatch.html');
+
                 });
             })
             $(document).ready(function() {
                 $('#text_Timer').click(function() {
                     $('#content').load('timer.html');
+                    
+                });
+            })
+            $(document).ready(function() {
+                $('#test2').click(function() {
+                    $('#content').empty();
+                    
                 });
             })
         </script>

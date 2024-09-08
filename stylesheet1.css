@@ -17,6 +17,7 @@
     
 }
 
+
 .stopwatch,.timer{
     
     background-color: rgb(182, 245, 240);
@@ -58,7 +59,7 @@
     
 }
 
-.text_Stopwatch,.text_Timer{
+.text_Stopwatch,.text_Timer,.back_button{
     align-self: center;
     background-color: rgb(153, 219, 128);
     border-radius:0;
@@ -70,12 +71,20 @@
     color:rgb(0, 0, 0);
 
 }
+.back_button{
+    background-color: rgb(182, 219, 182);
+    width:50px;
+    border-radius: 200px;
+    height: 50px;
+    font-size: 15px;
+}
 .text_Timer{
     background-color: rgb(221, 236, 181);
 
 }
 .text_Stopwatch:hover,
-.text_Timer:hover{
+.text_Timer:hover,
+.back_button:hover{
     cursor:pointer;
     background-color: rgb(235, 193, 193);}
 .fairytale{
